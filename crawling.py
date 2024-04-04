@@ -12,7 +12,7 @@ def get_name_address_list():
         for row in reader:
             if len(row) == 2 and row[1] != "":
                 lists.append((row[0], row[1]))
-        return lists
+    return lists
 
 
 def sales_index_crawling(name_address_list):
@@ -26,8 +26,8 @@ def sales_index_crawling(name_address_list):
         )
         data = int(re.sub(r"[^\d]", "", info_element.text))
 
-        response_data.append((name, data))
+        response_data.append((name, url, data))
     return response_data
 
 
-print(sales_index_crawling(get_name_address_list()))
+# print(sales_index_crawling(get_name_address_list()))
