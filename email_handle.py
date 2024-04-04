@@ -15,7 +15,7 @@ def get_password():
 def email_send(html_data):
     # 발신자, 수신자 이메일 주소
     sender_email = "kjmin622@hanyang.ac.kr"
-    receiver_email = "kjmin622@hanyang.ac.kr"
+    receiver_email = "soohun411@naver.com"
 
     # 이메일 서버 로그인 정보
     smtp_server = "smtp.gmail.com"  # 사용하는 이메일 서비스의 SMTP 서버 주소
